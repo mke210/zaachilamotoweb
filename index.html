@@ -66,6 +66,15 @@
         .benefit-card h4{font-size:.95rem;margin-bottom:.4rem}
         .benefit-card p{font-size:.78rem;color:var(--txt2);line-height:1.6}
 
+        /* VIDEOS */
+        .video-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem}
+        .video-card{background:var(--card);border:1px solid var(--bd);border-radius:var(--r2);padding:1rem;transition:.3s}
+        .video-card:hover{border-color:var(--acc);transform:translateY(-3px);box-shadow:0 10px 30px rgba(108,92,231,.2)}
+        .video-card h3{font-size:.9rem;margin-bottom:.5rem;text-align:center}
+        .video-card .video-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:var(--r)}
+        .video-card .video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+        .video-card p{font-size:.7rem;color:var(--txt3);text-align:center;margin-top:.5rem}
+
         .download-section{background:var(--bg2);text-align:center;padding:3rem 2rem}
         .download-section h2{margin-bottom:2rem}
         .download-grid{display:flex;gap:2rem;justify-content:center;flex-wrap:wrap}
@@ -104,6 +113,7 @@
         <a href="#problema">Problemática</a>
         <a href="#solucion">Solución</a>
         <a href="#beneficios">Beneficios</a>
+        <a href="#videos">Videos</a>
         <a href="#descargas">Descargas</a>
         <a href="#testimonios">Testimonios</a>
         <a href="#contacto">Contacto</a>
@@ -116,10 +126,11 @@
     <p>La app que conecta pasajeros con mototaxistas en Villa de Zaachila. Seguro, rápido y desde tu domicilio.</p>
     <div class="hero-buttons">
         <a href="#descargas" class="btn-hero">📲 Descargar App</a>
-        <a href="#beneficios" class="btn-hero outline">✨ Conoce más</a>
+        <a href="#videos" class="btn-hero outline">🎬 Ver Videos</a>
     </div>
 </section>
 
+<!-- ============ PROBLEMÁTICA (9 tarjetas - sin Tarifas Inconsistentes) ============ -->
 <section id="problema">
     <h2>🚧 La <span>Problemática</span> en Villa de Zaachila</h2>
     <p class="subtitle">Situaciones reales que enfrentan diariamente los habitantes de nuestra comunidad</p>
@@ -133,85 +144,23 @@
         <div class="problem-card"><span class="stat">🚌 Conexión perdida</span><span class="icon">🚌</span><h3>Conexión con Autobuses</h3><p>Muchos necesitan salir de la población hacia Oaxaca capital. Para ello deben llegar a la terminal de autobuses o al sitio de taxis foráneos. Sin un mototaxi disponible, pierden el autobús, la cita médica en la ciudad o el trámite urgente. Las salidas son limitadas.</p></div>
         <div class="problem-card"><span class="stat">⌛ Horas perdidas</span><span class="icon">⏰</span><h3>Tiempo Perdido</h3><p>Sin un sistema eficiente de transporte, los habitantes de Zaachila pierden entre 30 minutos y 2 horas diarias esperando o buscando transporte. Ese tiempo podría invertirse en la familia, el trabajo, el estudio o el descanso. Cada minuto perdido es calidad de vida que no regresa.</p></div>
         <div class="problem-card"><span class="stat">🔒 Sin garantía</span><span class="icon">🔒</span><h3>Inseguridad</h3><p>Al tomar un mototaxi en la calle no queda registro del viaje: quién era el chofer, a qué hora se abordó, hacia dónde iba. En caso de robo, acoso, accidente u olvido de pertenencias, no hay forma de identificar al responsable ni recuperar objetos perdidos.</p></div>
-        <div class="problem-card"><span class="stat">💰 Sin claridad</span><span class="icon">💰</span><h3>Tarifas Inconsistentes</h3><p>No existe una tarifa estándar. Cada chofer cobra lo que considera y en días de lluvia o noche los precios se disparan. El pasajero no puede comparar ni elegir. Un mismo viaje puede costar el doble dependiendo del chofer. La economía familiar se ve afectada por esta falta de transparencia.</p></div>
     </div>
 </section>
 
+<!-- ============ SOLUCIÓN (9 tarjetas - sin Mensajería) ============ -->
 <section id="solucion">
     <h2>💡 Nuestra <span>Solución</span></h2>
     <p class="subtitle">Zaachila Moto resuelve cada problema con funcionalidades pensadas para la comunidad</p>
     <div class="solution-grid">
-        
-        <div class="solution-card">
-            <span class="feature">📱 App Pasajero</span>
-            <span class="icon">👤</span>
-            <h3>Solicita desde donde estés</h3>
-            <p>Con un solo toque, el pasajero solicita un mototaxi sin salir de casa. La app detecta su ubicación y muestra en un mapa a los choferes disponibles cerca. Puede escribir su destino o seleccionarlo directamente en el mapa. <strong>Ya no hay que pararse en la calle, esperar bajo el sol ni exponerse a peligros.</strong></p>
-        </div>
-        
-        <div class="solution-card">
-            <span class="feature">🛺 App Chofer</span>
-            <span class="icon">🛺</span>
-            <h3>Recibe viajes sin dar vueltas</h3>
-            <p>El chofer recibe una alerta cuando un pasajero cercano solicita un viaje. Ve la ubicación exacta del cliente en el mapa y decide si acepta. <strong>Se acabó el gastar gasolina circulando sin rumbo buscando pasajeros.</strong> Cada viaje es seguro porque queda registrado quién lo tomó.</p>
-        </div>
-        
-        <div class="solution-card">
-            <span class="feature">⭐ Calidad garantizada</span>
-            <span class="icon">⭐</span>
-            <h3>Calificaciones y reputación</h3>
-            <p>Al finalizar cada viaje, el pasajero califica al chofer de 1 a 5 estrellas y puede dejar un comentario. Los choferes construyen reputación y los mejores aparecen primero. <strong>El mal servicio ya no queda impune y el buen servicio es recompensado con más clientes.</strong></p>
-        </div>
-        
-        <div class="solution-card">
-            <span class="feature">💰 Tarifa transparente</span>
-            <span class="icon">💰</span>
-            <h3>Tú decides el precio</h3>
-            <p>El chofer propone una tarifa justa y el pasajero la ve antes de aceptar. Si no está de acuerdo, puede rechazarla. Se acabaron los cobros abusivos. <strong>El pasajero tiene el control total de lo que paga.</strong> Todo queda registrado en el historial de viajes.</p>
-        </div>
-        
-        <div class="solution-card">
-            <span class="feature">💬 Comunicación directa</span>
-            <span class="icon">💬</span>
-            <h3>Chat integrado sin revelar tu número</h3>
-            <p>Pasajero y chofer pueden comunicarse por chat dentro de la app para coordinar el punto exacto de recogida, aclarar dudas o confirmar detalles del viaje. <strong>Todo sin compartir números de teléfono personales</strong>, protegiendo la privacidad de ambos.</p>
-        </div>
-        
-        <div class="solution-card">
-            <span class="feature">📦 Objetos olvidados</span>
-            <span class="icon">📦</span>
-            <h3>Sistema de reporte con recompensa</h3>
-            <p>Si un pasajero olvida algo en el mototaxi, puede reportarlo desde su historial de viajes describiendo el objeto y ofreciendo una recompensa económica. El chofer recibe una alerta inmediata en su app para revisar su unidad. <strong>Si lo encuentra, lo marca como entregado.</strong></p>
-        </div>
-        
-        <div class="solution-card">
-            <span class="feature">📊 Ganancias claras</span>
-            <span class="icon">📊</span>
-            <h3>Registro automático de ingresos</h3>
-            <p>El chofer ve en tiempo real cuánto ha ganado hoy, en la semana y el mes. Puede registrar sus gastos (gasolina, refacciones) y la app calcula automáticamente su <strong>ganancia neta real</strong>. Sin libretas, sin cuentas mentales, sin errores. Todo organizado y al alcance de un toque.</p>
-        </div>
-        
-        <div class="solution-card">
-            <span class="feature">👤 Viaje personalizado</span>
-            <span class="icon">👤</span>
-            <h3>Nombre del pasajero y pasajeros extra</h3>
-            <p>El pasajero puede registrar su nombre (opcional) para que el chofer sepa a quién recoge. También puede indicar si lleva acompañantes (hasta 3 pasajeros extra). <strong>Esto facilita la identificación y ayuda en caso de objetos olvidados</strong>, ya que el nombre queda asociado al reporte.</p>
-        </div>
-        
-        <div class="solution-card">
-            <span class="feature">🗺️ Mapa interactivo</span>
-            <span class="icon">🗺️</span>
-            <h3>Selecciona tu destino en el mapa</h3>
-            <p>Además de escribir la dirección, el pasajero puede tocar directamente el punto de destino en un mapa interactivo. El chofer ve una ruta trazada entre su ubicación, el punto de recogida y el destino. <strong>Todo visual, claro y preciso.</strong> Ideal para quienes no saben la dirección exacta.</p>
-        </div>
-        
-        <div class="solution-card">
-            <span class="feature">📨 Envíos locales</span>
-            <span class="icon">📨</span>
-            <h3>Mensajería y paquetería comunitaria</h3>
-            <p>¿Necesitas enviar un pastel, un medicamento o un producto de tu negocio? Solicita un mototaxi, indica que es un envío y el chofer lo recoge y entrega. <strong>Servicio de mensajería local accesible, rápido y con seguimiento</strong>, sin necesidad de pagar un taxi completo.</p>
-        </div>
-        
+        <div class="solution-card"><span class="feature">📱 App Pasajero</span><span class="icon">👤</span><h3>Solicita desde donde estés</h3><p>Con un solo toque, el pasajero solicita un mototaxi sin salir de casa. La app detecta su ubicación y muestra en un mapa a los choferes disponibles cerca. Puede escribir su destino o seleccionarlo directamente en el mapa. Ya no hay que pararse en la calle, esperar bajo el sol ni exponerse a peligros.</p></div>
+        <div class="solution-card"><span class="feature">🛺 App Chofer</span><span class="icon">🛺</span><h3>Recibe viajes sin dar vueltas</h3><p>El chofer recibe una alerta cuando un pasajero cercano solicita un viaje. Ve la ubicación exacta del cliente en el mapa y decide si acepta. Se acabó el gastar gasolina circulando sin rumbo buscando pasajeros. Cada viaje es seguro porque queda registrado quién lo tomó.</p></div>
+        <div class="solution-card"><span class="feature">⭐ Calidad garantizada</span><span class="icon">⭐</span><h3>Calificaciones y reputación</h3><p>Al finalizar cada viaje, el pasajero califica al chofer de 1 a 5 estrellas y puede dejar un comentario. Los choferes construyen reputación y los mejores aparecen primero. El mal servicio ya no queda impune y el buen servicio es recompensado con más clientes.</p></div>
+        <div class="solution-card"><span class="feature">💰 Tarifa transparente</span><span class="icon">💰</span><h3>Tú decides el precio</h3><p>El chofer propone una tarifa justa y el pasajero la ve antes de aceptar. Si no está de acuerdo, puede rechazarla. Se acabaron los cobros abusivos. El pasajero tiene el control total de lo que paga. Todo queda registrado en el historial de viajes.</p></div>
+        <div class="solution-card"><span class="feature">💬 Comunicación directa</span><span class="icon">💬</span><h3>Chat integrado sin revelar tu número</h3><p>Pasajero y chofer pueden comunicarse por chat dentro de la app para coordinar el punto exacto de recogida, aclarar dudas o confirmar detalles del viaje. Todo sin compartir números de teléfono personales, protegiendo la privacidad de ambos.</p></div>
+        <div class="solution-card"><span class="feature">📦 Objetos olvidados</span><span class="icon">📦</span><h3>Sistema de reporte con recompensa</h3><p>Si un pasajero olvida algo en el mototaxi, puede reportarlo desde su historial de viajes describiendo el objeto y ofreciendo una recompensa económica. El chofer recibe una alerta inmediata en su app para revisar su unidad. Si lo encuentra, lo marca como entregado.</p></div>
+        <div class="solution-card"><span class="feature">📊 Ganancias claras</span><span class="icon">📊</span><h3>Registro automático de ingresos</h3><p>El chofer ve en tiempo real cuánto ha ganado hoy, en la semana y el mes. Puede registrar sus gastos (gasolina, refacciones) y la app calcula automáticamente su ganancia neta real. Sin libretas, sin cuentas mentales, sin errores. Todo organizado y al alcance de un toque.</p></div>
+        <div class="solution-card"><span class="feature">👤 Viaje personalizado</span><span class="icon">👤</span><h3>Nombre del pasajero y pasajeros extra</h3><p>El pasajero puede registrar su nombre (opcional) para que el chofer sepa a quién recoge. También puede indicar si lleva acompañantes (hasta 3 pasajeros extra). Esto facilita la identificación y ayuda en caso de objetos olvidados, ya que el nombre queda asociado al reporte.</p></div>
+        <div class="solution-card"><span class="feature">🗺️ Mapa interactivo</span><span class="icon">🗺️</span><h3>Selecciona tu destino en el mapa</h3><p>Además de escribir la dirección, el pasajero puede tocar directamente el punto de destino en un mapa interactivo. El chofer ve una ruta trazada entre su ubicación, el punto de recogida y el destino. Todo visual, claro y preciso. Ideal para quienes no saben la dirección exacta.</p></div>
     </div>
 </section>
 
@@ -221,99 +170,56 @@
     
     <h3 style="color:var(--acc)">👤 Para Pasajeros</h3>
     <div class="benefits-grid">
-        <div class="benefit-card pax">
-            <span class="icon">🏠</span>
-            <h4>Pedir desde casa sin salir a la calle</h4>
-            <p>Adultos mayores, mujeres embarazadas, niños acompañados y cualquier persona puede solicitar su mototaxi desde la comodidad de su hogar. No más exposiciones al clima, a la delincuencia ni a accidentes viales. La app detecta tu ubicación automáticamente.</p>
-        </div>
-        <div class="benefit-card pax">
-            <span class="icon">🗺️</span>
-            <h4>Mapa en tiempo real</h4>
-            <p>Ves en el mapa a los mototaxis disponibles cerca de ti. Sabes exactamente cuánto tardarán en llegar. También puedes seleccionar tu destino tocando el mapa, sin necesidad de escribir la dirección.</p>
-        </div>
-        <div class="benefit-card pax">
-            <span class="icon">💰</span>
-            <h4>Tarifa clara y control total</h4>
-            <p>El chofer te propone un precio y tú decides si lo aceptas o lo rechazas. Sin sorpresas, sin cobros abusivos. Todo queda registrado. Puedes ver el costo antes de iniciar el viaje.</p>
-        </div>
-        <div class="benefit-card pax">
-            <span class="icon">⭐</span>
-            <h4>Calificar y mejorar el servicio</h4>
-            <p>Al final del viaje calificas al chofer con estrellas y un comentario. Tu opinión ayuda a toda la comunidad porque los mejores choferes ganan reputación y los malos son identificados.</p>
-        </div>
-        <div class="benefit-card pax">
-            <span class="icon">💬</span>
-            <h4>Chat con el chofer sin dar tu número</h4>
-            <p>¿No te encuentra? ¿Necesitas dar una referencia? Chatea directamente con el chofer desde la app. Tu número de teléfono permanece privado en todo momento.</p>
-        </div>
-        <div class="benefit-card pax">
-            <span class="icon">📦</span>
-            <h4>Reportar objetos olvidados</h4>
-            <p>Si olvidaste algo en el mototaxi, ve a tu historial de viajes, describe el objeto, ofrece una recompensa y el chofer recibirá una alerta inmediata. Si lo encuentra, te lo devuelve.</p>
-        </div>
-        <div class="benefit-card pax">
-            <span class="icon">👥</span>
-            <h4>Viaje con acompañantes</h4>
-            <p>Puedes indicar si llevas hasta 3 pasajeros extra. Ideal para familias, grupos de estudiantes o compañeros de trabajo que comparten el viaje.</p>
-        </div>
-        <div class="benefit-card pax">
-            <span class="icon">📋</span>
-            <h4>Historial de todos tus viajes</h4>
-            <p>Cada viaje que realizas queda guardado con fecha, ruta, chofer y costo. Puedes consultarlo cuando quieras. Ideal para llevar control de tus gastos de transporte.</p>
-        </div>
+        <div class="benefit-card pax"><span class="icon">🏠</span><h4>Pedir desde casa sin salir a la calle</h4><p>Adultos mayores, mujeres embarazadas, niños acompañados y cualquier persona puede solicitar su mototaxi desde la comodidad de su hogar. No más exposiciones al clima, a la delincuencia ni a accidentes viales. La app detecta tu ubicación automáticamente.</p></div>
+        <div class="benefit-card pax"><span class="icon">🗺️</span><h4>Mapa en tiempo real</h4><p>Ves en el mapa a los mototaxis disponibles cerca de ti. Sabes exactamente cuánto tardarán en llegar. También puedes seleccionar tu destino tocando el mapa, sin necesidad de escribir la dirección.</p></div>
+        <div class="benefit-card pax"><span class="icon">💰</span><h4>Tarifa clara y control total</h4><p>El chofer te propone un precio y tú decides si lo aceptas o lo rechazas. Sin sorpresas, sin cobros abusivos. Todo queda registrado. Puedes ver el costo antes de iniciar el viaje.</p></div>
+        <div class="benefit-card pax"><span class="icon">⭐</span><h4>Calificar y mejorar el servicio</h4><p>Al final del viaje calificas al chofer con estrellas y un comentario. Tu opinión ayuda a toda la comunidad porque los mejores choferes ganan reputación y los malos son identificados.</p></div>
+        <div class="benefit-card pax"><span class="icon">💬</span><h4>Chat con el chofer sin dar tu número</h4><p>¿No te encuentra? ¿Necesitas dar una referencia? Chatea directamente con el chofer desde la app. Tu número de teléfono permanece privado en todo momento.</p></div>
+        <div class="benefit-card pax"><span class="icon">📦</span><h4>Reportar objetos olvidados</h4><p>Si olvidaste algo en el mototaxi, ve a tu historial de viajes, describe el objeto, ofrece una recompensa y el chofer recibirá una alerta inmediata. Si lo encuentra, te lo devuelve.</p></div>
+        <div class="benefit-card pax"><span class="icon">👥</span><h4>Viaje con acompañantes</h4><p>Puedes indicar si llevas hasta 3 pasajeros extra. Ideal para familias, grupos de estudiantes o compañeros de trabajo que comparten el viaje.</p></div>
+        <div class="benefit-card pax"><span class="icon">📋</span><h4>Historial de todos tus viajes</h4><p>Cada viaje que realizas queda guardado con fecha, ruta, chofer y costo. Puedes consultarlo cuando quieras. Ideal para llevar control de tus gastos de transporte.</p></div>
     </div>
     
     <h3 style="color:var(--green)">🛺 Para Choferes</h3>
     <div class="benefits-grid">
-        <div class="benefit-card chof">
-            <span class="icon">📱</span>
-            <h4>Recibir viajes sin buscar pasajeros</h4>
-            <p>La app te avisa cuando hay un cliente cerca. Tú decides si aceptas o no. Se acabó el circular sin rumbo gastando gasolina. Cada viaje que haces es seguro porque sabes quién te solicitó.</p>
+        <div class="benefit-card chof"><span class="icon">📱</span><h4>Recibir viajes sin buscar pasajeros</h4><p>La app te avisa cuando hay un cliente cerca. Tú decides si aceptas o no. Se acabó el circular sin rumbo gastando gasolina. Cada viaje que haces es seguro porque sabes quién te solicitó.</p></div>
+        <div class="benefit-card chof"><span class="icon">📍</span><h4>Radio de 500m o ilimitado</h4><p>Por defecto recibes solicitudes de clientes en un radio de 500 metros. Si el administrador te otorga radio ilimitado, recibirás viajes de toda la población. Ideal para choferes con buena reputación.</p></div>
+        <div class="benefit-card chof"><span class="icon">💰</span><h4>Tú propones la tarifa</h4><p>Al recibir una solicitud, tú pones el precio que consideras justo. El pasajero lo ve y decide si acepta. Tú controlas tus ingresos y puedes ajustar según distancia, clima o urgencia.</p></div>
+        <div class="benefit-card chof"><span class="icon">📊</span><h4>Registro de ganancias automático</h4><p>La app lleva la cuenta de cuánto has ganado HOY, en la SEMANA y en el MES. Registra tus gastos (gasolina, refacciones) y calcula tu ganancia neta. Sin libretas, sin errores, todo en tiempo real.</p></div>
+        <div class="benefit-card chof"><span class="icon">💬</span><h4>Chat con el cliente</h4><p>Antes de llegar al punto de recogida puedes aclarar dudas con el pasajero. ¿Cómo es tu mototaxi? ¿De qué color? ¿Hay alguna referencia? Todo sin compartir números telefónicos.</p></div>
+        <div class="benefit-card chof"><span class="icon">📦</span><h4>Sistema de objetos olvidados</h4><p>Si un pasajero reporta un objeto olvidado en tu unidad, recibes una alerta inmediata con la descripción. Si lo encuentras, lo marcas como entregado. Incluso puedes ganar una recompensa.</p></div>
+        <div class="benefit-card chof"><span class="icon">⭐</span><h4>Construye tu reputación</h4><p>Tus pasajeros te califican. Entre más estrellas tengas, más clientes te van a preferir. La calidad de tu servicio se convierte en tu mejor carta de presentación.</p></div>
+        <div class="benefit-card chof"><span class="icon">🟢</span><h4>Tú decides cuándo trabajar</h4><p>Actívate cuando quieras recibir viajes y desactívate cuando necesites descansar. Sin horarios fijos, sin jefes. Tú eres dueño de tu tiempo y de tu negocio.</p></div>
+        <div class="benefit-card chof"><span class="icon">👤</span><h4>Sabes a quién recoges</h4><p>El pasajero puede registrar su nombre (opcional). Así sabes a quién buscas en el punto de recogida. Ideal para identificar rápido al cliente, especialmente si hay varias personas esperando.</p></div>
+        <div class="benefit-card chof"><span class="icon">📋</span><h4>Historial completo de servicios</h4><p>Todos tus viajes quedan registrados con fecha, ruta y ganancia. Puedes revisar tu historial cuando quieras. Ideal para declarar ingresos o simplemente llevar control de tu trabajo.</p></div>
+    </div>
+</section>
+
+<!-- ============ SECCIÓN DE VIDEOS ============ -->
+<section id="videos">
+    <h2>🎬 <span>Videos</span> Demostrativos</h2>
+    <p class="subtitle">Conoce cómo funcionan nuestras aplicaciones en acción</p>
+    <div class="video-grid">
+        <div class="video-card">
+            <h3>🎬 Video Promocional Zaachila Moto</h3>
+            <div class="video-wrap">
+                <iframe src="https://www.youtube.com/embed/vfOKLiEcH4Y" title="Video Promocional Zaachila Moto" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p>Conoce el proyecto completo</p>
         </div>
-        <div class="benefit-card chof">
-            <span class="icon">📍</span>
-            <h4>Radio de 500m o ilimitado</h4>
-            <p>Por defecto recibes solicitudes de clientes en un radio de 500 metros. Si el administrador te otorga radio ilimitado, recibirás viajes de toda la población. Ideal para choferes con buena reputación.</p>
+        <div class="video-card">
+            <h3>👤 App Pasajero - Tutorial</h3>
+            <div class="video-wrap">
+                <iframe src="https://www.youtube.com/embed/hpRcpyd7-yI" title="App Pasajero Zaachila Moto" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p>Aprende a solicitar tu mototaxi</p>
         </div>
-        <div class="benefit-card chof">
-            <span class="icon">💰</span>
-            <h4>Tú propones la tarifa</h4>
-            <p>Al recibir una solicitud, tú pones el precio que consideras justo. El pasajero lo ve y decide si acepta. Tú controlas tus ingresos y puedes ajustar según distancia, clima o urgencia.</p>
-        </div>
-        <div class="benefit-card chof">
-            <span class="icon">📊</span>
-            <h4>Registro de ganancias automático</h4>
-            <p>La app lleva la cuenta de cuánto has ganado HOY, en la SEMANA y en el MES. Registra tus gastos (gasolina, refacciones) y calcula tu ganancia neta. Sin libretas, sin errores, todo en tiempo real.</p>
-        </div>
-        <div class="benefit-card chof">
-            <span class="icon">💬</span>
-            <h4>Chat con el cliente</h4>
-            <p>Antes de llegar al punto de recogida puedes aclarar dudas con el pasajero. ¿Cómo es tu mototaxi? ¿De qué color? ¿Hay alguna referencia? Todo sin compartir números telefónicos.</p>
-        </div>
-        <div class="benefit-card chof">
-            <span class="icon">📦</span>
-            <h4>Sistema de objetos olvidados</h4>
-            <p>Si un pasajero reporta un objeto olvidado en tu unidad, recibes una alerta inmediata con la descripción. Si lo encuentras, lo marcas como entregado. Incluso puedes ganar una recompensa.</p>
-        </div>
-        <div class="benefit-card chof">
-            <span class="icon">⭐</span>
-            <h4>Construye tu reputación</h4>
-            <p>Tus pasajeros te califican. Entre más estrellas tengas, más clientes te van a preferir. La calidad de tu servicio se convierte en tu mejor carta de presentación.</p>
-        </div>
-        <div class="benefit-card chof">
-            <span class="icon">🟢</span>
-            <h4>Tú decides cuándo trabajar</h4>
-            <p>Actívate cuando quieras recibir viajes y desactívate cuando necesites descansar. Sin horarios fijos, sin jefes. Tú eres dueño de tu tiempo y de tu negocio.</p>
-        </div>
-        <div class="benefit-card chof">
-            <span class="icon">👤</span>
-            <h4>Sabes a quién recoges</h4>
-            <p>El pasajero puede registrar su nombre (opcional). Así sabes a quién buscas en el punto de recogida. Ideal para identificar rápido al cliente, especialmente si hay varias personas esperando.</p>
-        </div>
-        <div class="benefit-card chof">
-            <span class="icon">📋</span>
-            <h4>Historial completo de servicios</h4>
-            <p>Todos tus viajes quedan registrados con fecha, ruta y ganancia. Puedes revisar tu historial cuando quieras. Ideal para declarar ingresos o simplemente llevar control de tu trabajo.</p>
+        <div class="video-card">
+            <h3>🛺 App Chofer - Tutorial</h3>
+            <div class="video-wrap">
+                <iframe src="https://www.youtube.com/embed/Foz0l_lSFlc" title="App Chofer Zaachila Moto" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p>Aprende a recibir viajes y gestionar tus ganancias</p>
         </div>
     </div>
 </section>
